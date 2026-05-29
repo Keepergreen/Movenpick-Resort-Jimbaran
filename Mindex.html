@@ -59,9 +59,10 @@ body { font-family: 'DM Sans', 'Barlow', sans-serif; background: var(--paper); c
 }
 .header-glow { position:absolute; top:-120px; right:-80px; width:560px; height:560px; background:radial-gradient(ellipse 60% 50% at 80% 20%, rgba(201,168,76,.10) 0%, transparent 60%); pointer-events:none; }
 .header-glow2 { position:absolute; bottom:-60px; left:0; width:350px; height:350px; background:radial-gradient(circle, rgba(74,158,120,.08) 0%, transparent 65%); pointer-events:none; }
-.header-inner { position:relative; max-width:1280px; margin:0 auto; padding:36px 52px 42px; display:flex; flex-direction:column; gap:0; }
+.header-inner { position:relative; max-width:1280px; margin:0 auto; padding:36px 80px 42px; display:flex; flex-direction:column; gap:0; }
 .header-logos-row { display:flex; align-items:center; gap:24px; margin-bottom:28px; }
 .header-content-row { display:grid; grid-template-columns:1fr auto; gap:36px; align-items:start; }
+.header-content-row > div:first-child { padding-left:16px; border-left:2px solid rgba(201,168,76,.25); }
 
 .keeper-logo { display:flex; align-items:center; gap:14px; }
 .k-icon {
@@ -84,7 +85,7 @@ body { font-family: 'DM Sans', 'Barlow', sans-serif; background: var(--paper); c
 .hb-g { border-color:rgba(201,168,76,.35); color:var(--gold); background:rgba(201,168,76,.08); }
 .hb-s { border-color:rgba(246,243,237,.15); color:rgba(246,243,237,.45); }
 
-@media(max-width:960px){ .header-inner{padding:28px 24px;} .header-content-row{grid-template-columns:1fr;} .header-right{flex-direction:row;flex-wrap:wrap;} .header-logos-row{flex-wrap:wrap;} }
+@media(max-width:960px){ .header-inner{padding:28px 36px;} .header-content-row{grid-template-columns:1fr;} .header-right{flex-direction:row;flex-wrap:wrap;} .header-logos-row{flex-wrap:wrap;} }
 
 /* ═══ LAYOUT ════════════════════════════════════════ */
 .page { max-width:1280px; margin:0 auto; padding:52px 28px 64px; }
@@ -301,7 +302,7 @@ tr:hover td { background:var(--k-offwhite); }
   <div class="kpi-grid gap">
     <div class="kpi kc1">
       <div class="kpi-val">2,625</div>
-      <div class="kpi-unit">items diverted from waste</div>
+      <div class="kpi-unit">items redirected for continued use and repurposing</div>
       <div class="kpi-lbl">14 linen & towel types · 100% donation — no resale this programme</div>
     </div>
     <div class="kpi kc2">
@@ -531,7 +532,7 @@ tr:hover td { background:var(--k-offwhite); }
   </div>
 
   <!-- ── CO₂e EQUIVALENCIES ────────────────────────── -->
-  <div class="sh"><span class="sh-accent"></span><span class="sh-lbl">638 kg CO₂e — what it means</span><div class="sh-line"></div></div>
+  <div class="sh"><span class="sh-accent"></span><span class="sh-lbl">532 kg CO₂e — what it means</span><div class="sh-line"></div></div>
   <div class="eq-row gap">
     <div class="eq">
       <div class="eq-val">~2,120 km</div>
@@ -881,7 +882,7 @@ tr:hover td { background:var(--k-offwhite); }
             <td><strong>ESG Reporting</strong></td>
             <td style="color:var(--ink-mid);font-size:12px;">No quantifiable data tracked and reported to GM, owner, investors or certifiers.</td>
             <td style="font-size:12px;">Full CO₂e methodology. GHG Protocol Scope 3 landfill-avoided baseline. Green Globe Silver-level compliance. Press-ready impact narrative created.</td>
-            <td style="text-align:right;"><span class="fp" style="background:rgba(0,180,200,.08);color:#007a8a;">AUDIT READY</span></td>
+            <td style="text-align:right;"><span class="fp" style="background:rgba(0,180,200,.08);color:#007a8a;">AUDIT-SUPPORTIVE</span></td>
           </tr>
 
           <tr>
@@ -915,7 +916,7 @@ tr:hover td { background:var(--k-offwhite); }
 
     <p style="margin-bottom:10px;"><strong>CO₂e Factors — WRAP CarbonWARM2 v0.3 (DEFRA-commissioned, MELMod landfill model):</strong> Material-specific landfill-avoidance factor applied uniformly: <strong>Textiles = 0.492 kg CO₂e/kg</strong> — applied across all 14 item types (bed sheets, duvet covers, pillow cases, face towels, hand towels, bath sheets, bath mats, bathrobes). This is the standard textile factor under WRAP CarbonWARM2 and is consistent with Silver-level Green Globe methodology. Source: wrap.ngo/resources/report/carbon-waste-and-resources-metric-carbonwarm2 · gov.uk/government/collections/government-conversion-factors-for-company-reporting.</p>
 
-    <p style="margin-bottom:10px;"><strong>CO₂e Methodology — Donation Programme:</strong> This programme is 100% donation with no commercial resale component. Accordingly, only the <strong>landfill-avoided baseline (Method A — WRAP CarbonWARM2)</strong> is applicable. The reuse-displacement methodology (GHG Protocol Scope 3 Category 5, Method C) — which was applied to the TV resale stream in the Pullman Legian programme — is <em>not</em> applicable here as there is no confirmed commercial buyer whose purchase displaces new production. The 532.18 kg CO₂e figure represents verified landfill avoidance only and is both methodologically appropriate and conservative.</p>
+    <p style="margin-bottom:10px;"><strong>CO₂e Methodology — Donation Programme:</strong> This programme is 100% donation with no commercial resale component. Accordingly, only the <strong>landfill-avoided baseline (Method A — WRAP CarbonWARM2)</strong> is applicable. The reuse-displacement methodology (GHG Protocol Scope 3 Category 5, Method C) — which was applied to the TV resale stream in the Pullman Legian programme — is <em>not</em> applicable here as there is no confirmed commercial buyer whose purchase displaces new production. The 532.18 kg CO₂e figure represents estimated landfill-avoided emissions only and is both methodologically appropriate and conservative.</p>
 
     <p style="margin-bottom:10px;"><strong>Weight Sources & Verification:</strong> All unit weights are Keeper estimates derived from published hotel-grade GSM benchmarks (WRAP CarbonWARM2 standard textile weights, Hotemax, King of Cotton, The Linen Factory). Item counts are taken directly from the hotel-supplied distribution spreadsheet (Movenpick_Final_distribution.xlsx, April 2026). Weights have <em>not</em> been verified by physical hotel weigh-in. For formal Green Key or Green Globe audit submission, the hotel should provide actual weighed inventory records.</p>
 
